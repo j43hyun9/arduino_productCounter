@@ -1,52 +1,64 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/title"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:layout_height="match_parent">
 
-    <TextView
-        android:id="@+id/title_01"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:fontFamily="sans-serif-black"
-        android:text="재고검사기"
-        android:textAlignment="center"
-        android:textSize="34sp"
-        android:textStyle="bold"
-        android:visibility="visible" />
 
-    <Button
-        android:id="@+id/add_product"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="상품추가" />
-
-    <Button
-        android:id="@+id/list_product"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="상품목록" />
-
-    <Button
-        android:id="@+id/delete_product"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="상품삭제" />
-
-    <LinearLayout
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/title"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
 
-        <Button
-            android:id="@+id/pre_Button"
-            android:layout_width="119dp"
+        <TextView
+            android:id="@+id/title_01"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="400dp"
-            android:text="이전"
-            android:visibility="gone" />
+            android:fontFamily="sans-serif-black"
+            android:text="재고검사기"
+            android:textAlignment="center"
+            android:textSize="34sp"
+            android:textStyle="bold"
+            android:visibility="visible" />
+
+        <Button
+            android:id="@+id/add_product"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="상품추가" />
+
+        <Button
+            android:id="@+id/list_product"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="상품목록" />
+
+        <Button
+            android:id="@+id/delete_product"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="상품삭제" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/pre_Button"
+                android:layout_width="119dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="400dp"
+                android:text="이전"
+                android:visibility="gone" />
+
+        </LinearLayout>
 
     </LinearLayout>
 
-</LinearLayout>
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</FrameLayout>

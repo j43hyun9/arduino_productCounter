@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- 텍스트 입력 필드 -->
+    <TextView
+        android:id="@+id/add_Product_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="상품추가"
+        android:textAlignment="center"
+        android:textSize="34sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/centimeter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="(단위: cm)"
+        android:textAlignment="textEnd" />
+
+    <EditText
+        android:id="@+id/product_namespace"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:width="5dp"
+        android:hint="제품 이름을 입력해주세요."
+        android:textAlignment="center" />
+
+    <EditText
+        android:id="@+id/all_width"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:hint="실제 너비를 입력해주세요."
+        android:textAlignment="center" />
+    <!-- 확인 버튼 -->
+    <EditText
+        android:id="@+id/product_width"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:hint="상품 너비를 입력해주세요."
+        android:textAlignment="center" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/submitButton_pre"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="8dp"
+            android:layout_weight="1"
+            android:text="이전" />
+
+        <Button
+            android:id="@+id/submitButton_create"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_weight="1"
+            android:text="추가" />
+
+    </LinearLayout>
+
+</LinearLayout>
